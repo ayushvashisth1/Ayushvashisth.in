@@ -1,0 +1,440 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Ayush Vashisth Portfolio</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="main.css" />
+  <style>
+    /* Ensure smooth scrolling is disabled to prevent jumping */
+    html {
+      scroll-behavior: auto;
+    }
+
+    /* Hide side-nav by default */
+    .side-nav {
+      transform: translateX(-100%);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .side-nav.active {
+      transform: translateX(0);
+    }
+  </style>
+  <style>
+    /* Updated CSS to reduce zoom effect */
+    .side-nav {
+      transform: translateX(-100%); /* Hide off-screen */
+      transition: transform 0.2s ease-in-out; /* Shortened transition duration */
+    }
+
+    .side-nav.active {
+      transform: translateX(0); /* Show navbar */
+    }
+
+    /* Optional: If you want the menu icon to change when the navbar is active */
+    .menu-icon.active {
+      display: block; /* Keep the icon visible when active */
+    }
+
+    /* Prevent the navbar from zooming too much */
+    .side-nav ul {
+      transform: scale(1); /* Make sure no scaling occurs */
+    }
+  </style>
+</head>
+<body>
+  <!-- Menu Icon -->
+  <div class="menu-icon" onclick="toggleNav()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <!-- Side Navbar -->
+  <nav class="side-nav" id="sideNav">
+    <div class="close-icon" onclick="toggleNav()">&#10005;</div>
+    <div class="profile-section">
+      <img src="images/ayushoffice.jpg" alt="Profile" class="profile-img" />
+      <div class="profile-name">Ayush Vashisth</div>
+      <div class="social-links">
+        <a href="https://www.snapchat.com/add/ayushvashisth1?share_id=RJrQuKuFjnA&locale=en-IN" target="_blank"><img src="images/snap.png" alt="Snapchat" /></a>
+        <a href="https://www.instagram.com/_ayush_vashisth1?igsh=b2ZzMnB5eWxncmpk" target="_blank"><img src="images/download.jpg" alt="Instagram" /></a>
+        <a href="https://github.com/ayushvashisth1" target="_blank"><img src="images/GitHub-Mark-ea2971cee799.png" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/ayush-vashisth-59015a27a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="images/linkdin.png" alt="LinkedIn" /></a>
+      </div>
+    </div>
+    <ul>
+      <li><a href="#home" onclick="toggleNav()">Home</a></li>
+      <li><a href="#about" onclick="toggleNav()">About</a></li>
+      <li><a href="#projects" onclick="toggleNav()">Projects</a></li>
+      <li><a href="#education" onclick="toggleNav()">Education</a></li>
+      <li><a href="#experience" onclick="toggleNav()">Experience</a></li>
+      <li><a href="#certificate" onclick="toggleNav()">Certificate</a></li>
+      <li><a href="#resume" onclick="toggleNav()">Resume</a></li>
+      <li><a href="#contact" onclick="toggleNav()">Contact</a></li>
+    </ul>
+  </nav>
+<!-- Replace your current menu icon with this -->
+<button id="menu-icon" aria-label="Toggle navigation" aria-expanded="false">
+  <i class="bx bx-menu"></i>
+</button>
+
+<!-- Optional Back to Top Button (add near the bottom of body) -->
+<a href="#home" class="scroll-top" aria-label="Scroll to top">
+  <i class="bx bx-up-arrow-alt"></i>
+</a>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Ayush Vashisth</h1>
+    <p>I'am a Computer Science Enthusiast</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About</h2>
+    <div class="about-container">
+      <div class="left-content">
+        <p class="intro" style="color: white;">
+          Ayush Vashisth<br />
+          Computer Science Student || AIR 40237 Joint Entrance Examination (2023)<br />
+          National Gold Medalist (Drop Roball) || Gold Medalist U-17 Baseball<br />
+          Student Liaison Team @Training and Placement Cell - UIET MDU
+        </p>
+
+        <div class="info">
+          <p><strong>Name:</strong> Ayush Vashisth</p>
+          <p><strong>Date of Birth:</strong> 2nd October 2004</p>
+          <p><strong>Email:</strong> ayushvashisth04@gmail.com</p>
+          <p><strong>Location:</strong> India</p>
+          <p><strong>Skills:</strong> C++, Python, Java, Data Structures & Algorithms, Web Development</p>
+        </div>
+      </div>
+
+      <div class="right-img">
+        <img src="images/ayushoffice.jpg" alt="Ayush Vashisth">
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education-table">
+      <div class="edu-row">
+        <div class="edu-institute">Maharshi Dayanand University</div>
+        <div class="edu-degree">B.Tech, Computer Science</div>
+        <div class="edu-dates">Sep 2023 – Present</div>
+      </div>
+      <div class="edu-row">
+        <div class="edu-institute">Shiksha Bharti Sr Sec School, Rohtak</div>
+        <div class="edu-degree">10+2, Non-Medical</div>
+        <div class="edu-dates">Completed</div>
+      </div>
+      <div class="edu-row">
+        <div class="edu-institute">Indian Institute of Remote Sensing (IIRS), ISRO</div>
+        <div class="edu-degree">Global Navigation Satellite System</div>
+        <div class="edu-dates">Sep 2024 – Oct 2024</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="coming-soon">COMING SOON...</div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-table">
+      <div class="exp-row">
+        <div class="exp-role">🎓 Student Liaison Team Member</div>
+        <div class="exp-company">Training and Placement Cell, UIET, MDU, Rohtak</div>
+        <div class="exp-dates">Oct 2024 – Present · 7 mos</div>
+      </div>
+      <div class="exp-row">
+        <div class="exp-role">💼 Business Development and Sales Intern</div>
+        <div class="exp-company">Metvy Net Pvt Ltd.</div>
+        <div class="exp-dates">Feb 2025 – Feb 2025 · 1 mo</div>
+      </div>
+      <div class="exp-row">
+        <div class="exp-role">🔒 Cybersecurity Fundamental (Internship)</div>
+        <div class="exp-company">IBM</div>
+        <div class="exp-dates">Oct 2024 – Nov 2024 · 2 mos</div>
+      </div>
+      <div class="exp-row">
+        <div class="exp-role">📈 Business Development Specialist Intern</div>
+        <div class="exp-company">Younity Community Pvt. Ltd.</div>
+        <div class="exp-dates">Aug 2024 – Sep 2024 · 2 mos</div>
+      </div>
+      <div class="exp-row">
+        <div class="exp-role">💻 Intern at International Business Machines</div>
+        <div class="exp-company">IBM</div>
+        <div class="exp-dates">Jul 2024 – Aug 2024 · 2 mos</div>
+      </div>
+      <div class="exp-row">
+        <div class="exp-role">🎯 PrepInsta Prime Subscriber</div>
+        <div class="exp-company">PrepInsta</div>
+        <div class="exp-dates">Sep 2023 – Aug 2024 · 1 yr</div>
+      </div>
+      <div class="exp-row">
+        <div class="exp-role">📊 Tata Group – Data Visualization Job Simulation</div>
+        <div class="exp-company">Forage</div>
+        <div class="exp-dates">Jun 2024 – Jul 2024 · 2 mos</div>
+      </div>
+      <div class="exp-row">
+        <div class="exp-role">🚀 The Agnirva Space Internship Program</div>
+        <div class="exp-company">Agnirva.com Space Community</div>
+        <div class="exp-dates">May 2024 – Jul 2024 · 3 mos</div>
+      </div>
+    </div>
+  </section>
+  <section id="certificate">
+    <h2 class="section-title">Certificates</h2>
+    <div class="certificate-scroll-box">
+      <div class="certificate-matrix">
+        <!-- Certificate Item -->
+        <div class="certificate">
+          <img src="images/certificate/droproball.jpg" alt="National Drop Roball Championship">
+          <a href="https://drive.google.com/file/d/1apMbV9fvAnKvXLQBQQ5PPbeYDdzrTgRt/view?usp=sharing" target="_blank">National Drop Roball Championship 🏆</a>
+        </div>
+        <div class="certificate">
+          <img src="images/certificate/baseball.png" alt="U-17 District Baseball championship 2018-19. (Gold medal">
+          <a href="https://drive.google.com/file/d/1HJjU2fBN_OTlZwGvoWXPyUIAJp-eAOAx/view?usp=sharing" target="_blank">
+            U-17 District Baseball championship 2018-19. (Gold medal)</a>
+        </div>
+        <div class="certificate">
+          <img src="images/certificate/JEE.jpg" alt="AIR 40237 JEE MAINS 2023">
+          <a href="images/certificate/JEE RESULT.pdf" target="_blank">
+            AIR 40237 JEE MAINS 2023</a>
+        </div>
+        <div class="certificate">
+          <img src="images/certificate/prepinsta.jpg" alt="Dogs and Cats Prediction Project">
+          <a href="images/certificate/certificate_Dogs and Cats Prediction Project_564578.pdf" target="_blank">
+            Dogs and Cats Prediction Project</a>
+        </div>
+        <div class="certificate">
+          <img src="images/certificate/prepinsta.jpg" alt="CSS">
+          <a href="images/certificate/certificate_CSS_564578.pdf" target="_blank">
+            CSS</a>
+        </div>
+        <div class="certificate">
+          <img src="images/certificate/Accenture-Logo.png" alt="National Drop Roball Championship">
+          <a href="images/certificate/accenturec.jpg" target="_blank">
+            
+Technology Consulting Job Simulation</a>
+        </div>
+        <div class="certificate">
+          <img src="images/certificate/prepinsta.jpg" alt="DSA in C">
+          <a href="images/certificate/certificate_DSA in C_564578.pdf" target="_blank">
+            DSA in C</a>
+        </div>
+        <div class="certificate">
+          <img src="images/certificate/prepinsta.jpg" alt="National Drop Roball Championship">
+          <a href="images/certificate/certificate_HTML_564578.pdf" target="_blank">
+            HTML</a>
+        </div>
+        <div class="certificate">
+          <img src="images/certificate/prepinsta.jpg" alt="National Drop Roball Championship">
+          <a href="images/certificate/certificate_Python Course_564578.pdf" target="_blank">
+            Python Course</a>
+        </div>
+        <div class="certificate">
+          <img src="images/certificate/ibm.jpg" alt="National Drop Roball Championship">
+          <a href="images/certificate/ibm summer.jpg" target="_blank">
+            
+IBM SkillsBuild Summer Internship Program</a>
+        </div>
+        <div class="certificate">
+          <img src="images/certificate/prepinsta.jpg" alt="C Programming">
+          <a href="images/certificate/CPROG.jpg" target="_blank">
+            C Programming</a>
+        </div>
+        <div class="certificate">
+          <img src="images/certificate/ibm.jpg" alt="National Drop Roball Championship">
+          <a href="images/certificate/cybersecurity fundamental.jpg" target="_blank">
+            cybersecurity fundamental</a>
+        </div>
+        <div class="certificate">
+          <img src="images/certificate/prepinsta.jpg" alt="National Drop Roball Championship">
+          <a href="images/certificate/certificate_Data Science_564578.pdf" target="_blank">
+            Data Science</a>
+        </div>
+        <div class="certificate">
+          <img src="images/certificate/prepinsta.jpg" alt="National Drop Roball Championship">
+          <a href="images/certificate/certificate_First Naukri_564578.pdf" target="_blank">
+            First Naukri</a>
+        </div>
+        <div class="certificate">
+          <img src="images/certificate/prepinsta.jpg" alt="National Drop Roball Championship">
+          <a href="images/certificate/certificate_AMCAT Course_564578.pdf" target="_blank">
+            AMCAT Course</a>
+        </div>
+        <div class="certificate">
+          <img src="images/certificate/prepinsta.jpg" alt="National Drop Roball Championship">
+          <a href="images/certificate/certificate_Tableau_564578 (1).pdf" target="_blank">
+            Tableau</a>
+        </div>
+        <div class="certificate">
+          <img src="images/certificate/agnirava logo.jpg" alt="
+          THE AGNIRVA SPACE INTERNSHIP PROGRAM">
+          <a href="images/certificate/agnirava.jpg" target="_blank">
+            
+THE AGNIRVA SPACE INTERNSHIP PROGRAM</a>
+        </div>
+        <div class="certificate">
+          <img src="images/certificate/tata'.png" alt="
+          Tata Group - Data Visualisation: Empowering Business with Effective Insights Job Simulation">
+          <a href="images/certificate/tata jobsim.jpg" target="_blank">
+           
+Tata Group - Data Visualisation: Empowering Business with Effective Insights Job Simulation</a>
+        </div>
+        <!-- Add other .certificate blocks like this -->
+        <!-- ... -->
+      </div>
+   
+  </section>
+  
+  
+
+    
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <div class="resume-container">
+      <!-- Download Button -->
+      <a href="https://drive.google.com/file/d/1ZMG1Nxw6roh5JL15M63DpWKGNqj1chVt/view?usp=sharing" download="Ayush_Vashisth_Resume.pdf">
+        <button class="download-btn">Download My CV</button>
+      </a>
+  
+      <!-- Scrollable PDF Viewer -->
+      <div class="pdf-container">
+        <iframe src="images/ayush cv.pdf" width="100%" height="600px"></iframe>
+
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="content">
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+          <input type="hidden" name="access_key" value="3ff02f10-ce5c-4b13-86c4-d283b509f30c">
+          <input type="hidden" name="_template" value="table">
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+
+        <div id="feedback-section">
+          <h3>Feedback</h3>
+          <textarea id="feedback" placeholder="Leave your feedback"></textarea>
+          <button onclick="submitFeedback()">Submit Feedback</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Resume Section -->
+
+
+
+  <!-- JavaScript -->
+  <script>
+    function toggleNav() {
+      document.getElementById('sideNav').classList.toggle('active');
+    }
+
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate");
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+
+    function submitFeedback() {
+      const feedback = document.getElementById("feedback").value;
+      if (feedback.trim() === "") {
+        alert("Please enter your feedback.");
+        return;
+      }
+
+      const mailtoLink = `mailto:ayushvashisth04@gmail.com?subject=Portfolio Feedback&body=${encodeURIComponent(feedback)}`;
+      window.location.href = mailtoLink;
+    }
+    // Get modal and other elements
+const modal = document.getElementById('certificate-modal');
+const modalImg = document.getElementById('certificate-viewer');
+const closeModal = document.getElementById('close-modal');
+const certificateImages = document.querySelectorAll('.certificate-image');
+
+// Function to open modal with certificate
+function openCertificateModal(certFile) {
+  modal.style.display = "block";  // Show modal
+  modalImg.src = certFile;       // Set the iframe src to the selected certificate
+}
+
+// Close the modal
+closeModal.onclick = function () {
+  modal.style.display = "none";  // Hide modal
+}
+
+// Close modal when clicking outside the modal content
+window.onclick = function (event) {
+  if (event.target === modal) {
+    modal.style.display = "none";  // Hide modal
+  }
+}
+
+// Add event listener to certificate images
+certificateImages.forEach((img) => {
+  img.addEventListener('click', () => {
+    const certFile = img.getAttribute('data-cert');  // Get the certificate file
+    openCertificateModal(certFile);  // Open the modal with the selected certificate
+  });
+});
+
+    window.onload = function() {
+        if (window.location.hash === "" || window.location.hash === "#home") {
+            window.location.href = "#home"; // Force homepage load
+        }
+    };
+    function toggleNav() {
+      document.getElementById('sideNav').classList.toggle('active');
+    }
+
+    // Ensure the page starts from home
+    function startFromHome() {
+      if (!window.location.hash || window.location.hash === "#resume") {
+        window.location.href = "#home";
+      }
+    }
+
+  </script>
+  
+</body>
+</html>
